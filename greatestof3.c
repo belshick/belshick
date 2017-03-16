@@ -9,14 +9,14 @@ int main()
     if(a>b&&a>c)
     {
 
-        printf("A is greater");
+        printf("%d is greater",a);
     }
     else if(b>c&&b>a)
     {
 
-        printf("B is greater");
+        printf("%d is greater",b);
     }
     else{
-        printf("C is greater");
+        printf("%d is greater",c);
     }
 }
