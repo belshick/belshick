@@ -20,7 +20,7 @@ int main()
            max=a[i];
        }
    }
-   printf("%d\n",max);
+   printf(" maximum no:%d\n",max);
    min=a[0];
    for(i=0;i<num;i++)
    {
@@ -31,8 +31,8 @@ int main()
            min=a[i];
        }
    }
-   printf("%d\n",min);
+   printf("minimumno:%d\n",min);
  ans=max+min;
- printf("%d",ans);
+ printf("sum:%d",ans);
     return 0;
 }
