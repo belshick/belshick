@@ -1,12 +1,18 @@
 package b;
-
+import java.util.Scanner;
 public class reverse {
 
 	public static void main(String[] args) {
-		
-			   StringBuffer buffer = new StringBuffer("bell");
-			   buffer.reverse();
-			   System.out.println(buffer);
-			 }  
-			}
+		Scanner a=new Scanner(System.in);
+        int num,rev=0,rem;
+        num=a.nextInt();
+        while(num!=0)
+        {
+        	rem=num%10;
+        	rev=rev*10+rem;
+        	num/=10;
+        }
+        System.out.println(rev);
+	}
 
+}
