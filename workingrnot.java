@@ -8,11 +8,11 @@ public class workingrnot {
 		String d=a.next();
 		if(d.equals("sunday")||d.equals("saterday"))
 		{
-			System.out.println("false");
+			System.out.println(d+"=false");
 		}
 		else
 		{
-			System.out.println("true");
+			System.out.println(d+"=true");
 		}
 		
 	}
