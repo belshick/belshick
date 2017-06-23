@@ -32,7 +32,7 @@ int main()
        }
    }
    printf("minimumno:%d\n",min);
- ans=max+min;
- printf("sum:%d",ans);
+ //ans=max+min;
+ //printf("sum:%d",ans);
     return 0;
 }
