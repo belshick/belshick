@@ -19,6 +19,15 @@ int main()
    arr[i]=max;
    }
    }
-   printf("%d",max);
+   printf("Maximun No:%d",max);
+for(i=0;i<n;i++)
+   {
+   if(arr[i]<min)
+   {
+   arr[i]=max;
+   }
+   }
+   printf("Minimun No:%d",min);
+
 
 }
