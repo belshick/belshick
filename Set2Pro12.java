@@ -1,26 +1,29 @@
-package Player;
-import java.util.*;
+package Hunder;
+import java.util.Scanner;
+import java.util.Set;
+import java.util.TreeMap;
+import java.util.List;
+import java.util.Collections;
+ import java.util.LinkedList;
 public class Set2Pro12 {
 
 	
 	public static void main(String[] args) {
-		Scanner a=new Scanner(System.in);
-		int num=a.nextInt();
-		int[] arr=new int[num];
-		for(int i=0;i<arr.length;i++)
-		{
-			arr[i]=a.nextInt();
+		TreeMap<Integer,Integer> tm=new TreeMap<Integer,Integer>();
+		int hight;
+		Scanner s=new Scanner(System.in);
+		for(int i=0;i<10;i++){
+			hight=s.nextInt();
+			tm.put(hight,i);
 		}
-		System.out.println("enter the key value");
-		int k=a.nextInt();
-		for(int i=arr.length-k;i<arr.length;i++)
-		{
-			System.out.println(arr[i]);
-		}
-		for(int i=0;i<=k;i++)
-		{
-			System.out.println(arr[i]);
-		}
+		Set<Integer> st=tm.keySet();
+		List<Integer> l=new LinkedList<Integer>(st);
+		Collections.reverse(l);
+		System.out.println(tm);
+		System.out.println(l.get(3));
+		int k=s.nextInt();
+		System.out.println(l.get(k));
+
 	}
 
 }
